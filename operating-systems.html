@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en-us">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -13,7 +13,6 @@
         This is a simple page about explaining what operating systems are, why
         they are important, etc.
       </p>
-
       <nav>
         <ul>
           <li><a href="#windows">Windows</a></li>
@@ -34,6 +33,23 @@
           thinking about swapping Windows over to a different operating system,
           such as linux.
         </p>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/Uh9643c2P6k"
+          title="Windows - Introducing Windows 11"
+          frameborder="0"
+          allow="
+            accelerometer;
+            autoplay;
+            clipboard-write;
+            encrypted-media;
+            gyroscope;
+            picture-in-picture;
+            web-share;
+          "
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen></iframe>
       </section>
 
       <section id="ios">
@@ -48,6 +64,23 @@
           iPhones and was the basic operating system used on all of apple's
           hardware until present. iOS was based on MacOS.
         </p>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/75KGNq_Jy9g"
+          title="HSN - What is iOS?"
+          frameborder="0"
+          allow="
+            accelerometer;
+            autoplay;
+            clipboard-write;
+            encrypted-media;
+            gyroscope;
+            picture-in-picture;
+            web-share;
+          "
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen></iframe>
       </section>
 
       <section id="macos">
@@ -58,6 +91,23 @@
           desktop market. It is a desktop operating system used for all of
           apple's desktop and laptop systems.
         </p>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/dqvgAqBnxbs"
+          title="The Tech Gremlin Warrior - What is macOS? Explained for Windows Users"
+          frameborder="0"
+          allow="
+            accelerometer;
+            autoplay;
+            clipboard-write;
+            encrypted-media;
+            gyroscope;
+            picture-in-picture;
+            web-share;
+          "
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen></iframe>
       </section>
 
       <section id="linux">
@@ -77,7 +127,7 @@
         <iframe
           width="560"
           height="315"
-          src="https://www.youtube.com/embed/eQbIxEw3AI0?si=QDQQAlxJXy9lVohu"
+          src="https://www.youtube.com/embed/eQbIxEw3AI0"
           title="YouTube video player"
           frameborder="0"
           allow="
@@ -91,8 +141,6 @@
           "
           referrerpolicy="strict-origin-when-cross-origin"
           allowfullscreen></iframe>
-
-        <!-- </section> -->
 
         <dl>
           <dt>Package Manager</dt>
@@ -191,7 +239,17 @@
               >Why did you choose <span id="chooseOs">this</span> operating
               system?</label
             >
-            <input type="text" />
+            <input type="text" /><br /><br />
+
+            <label for="otherTextArea" id="otherTextArea2" style="display: none"
+              >What operating system are you referring to?</label
+            >
+            <textarea
+              name="otheros"
+              id="otherTextArea"
+              rows="8"
+              cols="40"
+              style="display: none"></textarea>
           </fieldset>
         </form>
       </section>
@@ -206,16 +264,19 @@
     </main>
     <script>
       function updateOsText() {
-        const selectedOs = document.querySelector('input[name="os"]:checked');
-        const labelText = selectedOs.nextElementSibling.textContent.trim();
-
+        let selectedOs = document.querySelector('input[name="os"]:checked');
+        let labelText = selectedOs.nextElementSibling.textContent.trim();
         // Check if the selected operating system is other, if it is, use default instead of "Other"
         if (labelText === "Other") {
           document.getElementById("osVersion").textContent = "that OS";
           document.getElementById("chooseOs").textContent = "this";
+          document.getElementById("otherTextArea").style.display = "flex";
+          document.getElementById("otherTextArea2").style.display = "flex";
         } else {
           document.getElementById("osVersion").textContent = labelText;
           document.getElementById("chooseOs").textContent = labelText;
+          document.getElementById("otherTextArea").style.display = "none";
+          document.getElementById("otherTextArea2").style.display = "none";
         }
       }
     </script>
