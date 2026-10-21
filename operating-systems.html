@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Operating Systems | Hardware and OS'es</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main id="top">
+      <h1>Operating Systems</h1>
+      <p>
+        This is a simple page about explaining what operating systems are, why
+        they are important, etc.
+      </p>
+
+      <nav>
+        <ul>
+          <li><a href="#windows">Windows</a></li>
+          <li><a href="#ios">iOS</a></li>
+          <li><a href="#macos">MacOS</a></li>
+          <li><a href="#linux">Linux Kernel</a></li>
+        </ul>
+      </nav>
+
+      <section id="windows">
+        <h2>Windows</h2>
+        <p>
+          Windows is currently the most commonly used operating system by far.
+          (about 76% of the desktop market or 1 billion users) Recently however,
+          Microsoft (the company behind windows) has posted numerous bad
+          updates, most of them causing issues such as your audio not working,
+          and have been doing this for the past while. Multiple people are
+          thinking about swapping Windows over to a different operating system,
+          such as linux.
+        </p>
+      </section>
+
+      <section id="ios">
+        <h2>iOS</h2>
+        <p>
+          iOS covers a high percentage of users (1-1.5 billion users, about 31%
+          of the mobile market) And is the operating system used by apple for
+          their iPhones and iPads. This Operating system powered all mobile and
+          non-desktop devices in the apple ecosystem until 2019, when apple
+          changed the naming of the operating systems away from iOS into tvOS,
+          iPadOS, watchOS, and audioOS. iOS is still used today, powering
+          iPhones and was the basic operating system used on all of apple's
+          hardware until present. iOS was based on MacOS.
+        </p>
+      </section>
+
+      <section id="macos">
+        <h2>MacOS (X)</h2>
+        <p>
+          MacOS has a fair number of users, but it is very few in comparision to
+          windows. It has aobut 100-500 million users, or about 17% of the
+          desktop market. It is a desktop operating system used for all of
+          apple's desktop and laptop systems.
+        </p>
+      </section>
+
+      <section id="linux">
+        <h2>Linux Kernel</h2>
+        <p>
+          The Linux Kernel is not a OS, but a open-source kernel. Many different
+          operating systems all use the linux kernel. And are primarily found in
+          cloud enviroments, servers, or power users who use linux as a desktop.
+          Most linux "operating systems" are based on different operating
+          systems (distros), for example, the most common one is Debian-based or
+          "deb-based" distros, one example that is quite popular and common is
+          Ubuntu, which is Deb-Based. Because of the huge list of distributions.
+          I cannot cover all of the operating systems in the linux ecosystem.
+          Instead, I will go over the Kernel, most commonly known information,
+          and the most commonly known <strong>base operating systems</strong>.
+        </p>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/eQbIxEw3AI0?si=QDQQAlxJXy9lVohu"
+          title="YouTube video player"
+          frameborder="0"
+          allow="
+            accelerometer;
+            autoplay;
+            clipboard-write;
+            encrypted-media;
+            gyroscope;
+            picture-in-picture;
+            web-share;
+          "
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen></iframe>
+
+        <!-- </section> -->
+
+        <dl>
+          <dt>Package Manager</dt>
+          <dd>
+            There is a good chance you will discover and hear the term package
+            manager when using linux. It refers to the software developed by
+            someone that allows you to easily install software, manage
+            permissions at times, and update your system. You will most commonly
+            see the <strong>Advanced Package Tool (APT)</strong>
+          </dd>
+          <dt>Bourne-Again SHell (BASH)</dt>
+          <dd>
+            Bash is a shell, most commonly found in Ubuntu. It is a popular
+            terminal enviroment that can be easily understood even to beginners.
+          </dd>
+
+          <dt>Deb-Based</dt>
+          <dd>
+            Deb-based refers to different linux distributions/operating systems
+            that are based on debian. They are the most common distributions for
+            beginners to use. An few examples of deb-based distros include
+            Ubuntu, Linux Mint, and Proxmox VE.
+          </dd>
+
+          <dt>RPM / Red Hat-Based</dt>
+          <dd>
+            These are operating systems/distributions that are based on the red
+            hat / fedora operating systems
+          </dd>
+
+          <dt>Gentoo-Based</dt>
+          <dd>
+            These are distros that are based on the gentoo operating system.
+            Gentoo is not designed ideally to be used by beginners. It requires
+            you to compile your own software from the
+            <strong>source code</strong> locally using Gentoo's package manager,
+            Portage.
+          </dd>
+
+          <dt>Independant / Not based on any distro</dt>
+          <dd>
+            These are distributions that are not based on any other operating
+            system. They use their own package manager, such as Nix Package
+            Manager (NixOS), eopkg (Solus), or runit instead of systemd and xbps
+            as its package manager (Void Linux)
+          </dd>
+        </dl>
+      </section>
+
+      <section id="form">
+        <form id="favorite-os">
+          <fieldset>
+            <legend>What is your favorite Operating System?</legend>
+            <input
+              type="radio"
+              name="os"
+              value="win"
+              onclick="updateOsText()" />
+            <label for="os">Windows</label><br />
+
+            <input
+              type="radio"
+              name="os"
+              value="ios"
+              onclick="updateOsText()" />
+            <label for="os">iOS</label><br />
+
+            <input
+              type="radio"
+              name="os"
+              value="macos"
+              onclick="updateOsText()" />
+            <label for="os">MacOS</label><br />
+
+            <input
+              type="radio"
+              name="os"
+              value="linux"
+              onclick="updateOsText()" />
+            <label for="os">Linux Kernel</label><br />
+
+            <input
+              type="radio"
+              name="os"
+              value="other"
+              onclick="updateOsText()" />
+            <label for="os">Other</label><br />
+
+            <label
+              >What version of <span id="osVersion">that OS</span> is your
+              favourite?</label
+            >
+            <input type="text" /><br /><br />
+
+            <label
+              >Why did you choose <span id="chooseOs">this</span> operating
+              system?</label
+            >
+            <input type="text" />
+          </fieldset>
+        </form>
+      </section>
+
+      <a class="back-to-top" href="#top">
+        <img
+          src="./assets/top.png"
+          alt="Button to the top of the page."
+          height="60"
+          width="60"
+      /></a>
+    </main>
+    <script>
+      function updateOsText() {
+        const selectedOs = document.querySelector('input[name="os"]:checked');
+        const labelText = selectedOs.nextElementSibling.textContent.trim();
+
+        // Check if the selected operating system is other, if it is, use default instead of "Other"
+        if (labelText === "Other") {
+          document.getElementById("osVersion").textContent = "that OS";
+          document.getElementById("chooseOs").textContent = "this";
+        } else {
+          document.getElementById("osVersion").textContent = labelText;
+          document.getElementById("chooseOs").textContent = labelText;
+        }
+      }
+    </script>
+  </body>
+</html>
