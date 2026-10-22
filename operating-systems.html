@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <main id="top">
+    <header>
       <h1>Operating Systems</h1>
       <p>
         This is a simple page about explaining what operating systems are, why
@@ -19,9 +19,11 @@
           <li><a href="#ios">iOS</a></li>
           <li><a href="#macos">MacOS</a></li>
           <li><a href="#linux">Linux Kernel</a></li>
+          <li><a href="#form">Form</a></li>
         </ul>
       </nav>
-
+    </header>
+    <main id="top">
       <section id="windows">
         <h2>Windows</h2>
         <p>
@@ -250,6 +252,11 @@
               rows="8"
               cols="40"
               style="display: none"></textarea>
+
+            <br /><input
+              type="reset"
+              value="Clear the data entered in this form" />
+            <br /><br /><input type="submit" value="Submit this form!" />
           </fieldset>
         </form>
       </section>
@@ -263,6 +270,8 @@
       /></a>
     </main>
     <script>
+      // This function gets called when a radio button is updated and
+      // Updates the <label> to the name of the OS, EXCEPT for "Other"
       function updateOsText() {
         let selectedOs = document.querySelector('input[name="os"]:checked');
         let labelText = selectedOs.nextElementSibling.textContent.trim();
