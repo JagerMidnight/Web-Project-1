@@ -25,3 +25,11 @@ body {
   bottom: 0;
   margin: 1rem;
 }
+
+footer {
+  text-align: center;
+}
+
+footer a {
+  text-decoration: none;
+}
