@@ -33,3 +33,28 @@ footer {
 footer a {
   text-decoration: none;
 }
+table {
+  border-collapse: collapse;
+}
+td,
+th {
+  /* Styling for the whole table's content */
+  border: 1px;
+  border-style: solid;
+  border-color: black;
+  color: ghostwhite;
+  padding: 8px;
+}
+
+th {
+  /* Title Styling */
+  background-color: #334155;
+}
+
+tr:nth-child(odd) {
+  background-color: #64748b;
+}
+
+tr:nth-child(even) {
+  background-color: #475569;
+}
