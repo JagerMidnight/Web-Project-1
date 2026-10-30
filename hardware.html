@@ -9,18 +9,22 @@
   <body>
     <header>
       <h1>PC Hardware</h1>
-      <p>This is a webpage that will explain PC Hardwares.</p>
       <nav>
-      <ul>
-        <li><a href="./index.html">Main Webpage</a></li>
-        <li><a href="#cpu">Central Processing Unit</a></li>
-        <li><a href="#gpu">Graphic Processing Unit</a></li>
-        <li><a href="#ram">Memory Modules</a></li>
-        <li><a href="#drives">Storage Drives</a></li>
-        <li><a href="#peripherals">Peripherals</a></li>
-        <li><a href="#networks">Networking</a></li>
-        <li><a href="#form">Form</a></li>
-      </ul>
+        <ul>
+          <li><a href="./index.html">Main Webpage</a></li>
+          <li><a href="hardware.html">Hardware</a></li>
+          <li><a href="operating-systems.html">Operating Systems</a></li>
+        </ul>
+        <hr />
+        <ul>
+          <li><a href="#cpu">Central Processing Unit</a></li>
+          <li><a href="#gpu">Graphic Processing Unit</a></li>
+          <li><a href="#ram">Memory Modules</a></li>
+          <li><a href="#drives">Storage Drives</a></li>
+          <li><a href="#peripherals">Peripherals</a></li>
+          <li><a href="#networks">Networking</a></li>
+          <li><a href="#form">Form</a></li>
+        </ul>
       </nav>
     </header>
     <main id="top">
@@ -111,78 +115,57 @@
       </section>
 
       <section id="drives">
-        <h2>Storage Drives</h2>
-        <table>
-          <tr>
-            <th>Type of Drive</th>
-            <th>Abbreviation</th>
-            <th>Mechanism Type</th>
-            <th>Interface Type</th>
-            <th>Usage Status</th>
-          </tr>
-          <tr>
-            <td>Hard Disk Drive</td>
-            <td>HDD</td>
-            <td>Moving parts</td>
-            <td>Serial ATA</td>
-            <td>Still used</td>
-          </tr>
+        <div>
+          <h2>Storage Drives</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>Type of Drive</th>
+                <th>Abbreviation</th>
+                <th>Mechanism Type</th>
+                <th>Interface Type</th>
+                <th>Usage Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Hard Disk Drive</td>
+                <td>HDD</td>
+                <td>Moving parts</td>
+                <td>Serial ATA</td>
+                <td>Still used</td>
+              </tr>
 
-          <tr>
-            <td>Solid State Drive</td>
-            <td>SSD</td>
-            <td>Uses NAND chips</td>
-            <td>Serial ATA or NVM express</td>
-            <td>Still used</td>
-          </tr>
-          <tr>
-            <td>Solid State Hybrid Drive</td>
-            <td>SSHD</td>
-            <td>Both moving parts and NAND chips</td>
-            <td>Serial ATA Primarily</td>
-            <td>Obsolete</td>
-          </tr>
-        </table>
-
-        <h3>Solid State Drives</h3>
-        <p>
-          The SSD is a non-volatile storage device that uses NAND chip-based
-          flash memory to store data. It has no moving parts, making it faster
-          and more reliable. It also has lower power consumption and generates
-          less heat compared to hard drives. They are sometimes more expensive
-          than hard drives, but most of the time they are about the same price.
-          Unlike hard drives, SSDs allow for stupidly working mounting options,
-          such as duct taping it to the case, purely because it has no moving
-          parts. This is not recommended, but it is possible. They come in sizes
-          of 3.5".
-        </p>
-        <iframe
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/AmkTF0rTiWY"
-          title="InfiniteDesk - How SSDs work"
-          frameborder="0"
-          allow="
-            accelerometer;
-            autoplay;
-            clipboard-write;
-            encrypted-media;
-            gyroscope;
-            picture-in-picture;
-            web-share;
-          "
-          referrerpolicy="strict-origin-when-cross-origin"
-          allowfullscreen
-          >Your browser does not support inline frames.</iframe
-        >
-      </section>
-
-        <h3>Hard Disk Drives</h3>
-        <p>
-          The hard disk drive (HDD) is a non-volatile storage device that uses
-          magnetic storage to store and retrieve digital data. It has moving
-          parts and you cannot have magents near it. They come in sizes of 3.5"
-          and 2.5", most commonly 3.5"</p>
+              <tr>
+                <td>Solid State Drive</td>
+                <td>SSD</td>
+                <td>Uses NAND chips</td>
+                <td>Serial ATA or NVM express</td>
+                <td>Still used</td>
+              </tr>
+              <tr>
+                <td>Solid State Hybrid Drive</td>
+                <td>SSHD</td>
+                <td>Both moving parts and NAND chips</td>
+                <td>Serial ATA Primarily</td>
+                <td>Obsolete</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div>
+          <h3>Solid State Drives</h3>
+          <p>
+            The SSD is a non-volatile storage device that uses NAND chip-based
+            flash memory to store data. It has no moving parts, making it faster
+            and more reliable. It also has lower power consumption and generates
+            less heat compared to hard drives. They are sometimes more expensive
+            than hard drives, but most of the time they are about the same
+            price. Unlike hard drives, SSDs allow for stupidly working mounting
+            options, such as duct taping it to the case, purely because it has
+            no moving parts. This is not recommended, but it is possible. They
+            come in sizes of 3.5".
+          </p>
           <iframe
             width="560"
             height="315"
@@ -202,14 +185,15 @@
             allowfullscreen
             >Your browser does not support inline frames.</iframe
           >
-        </p>
-      </section>
-
-        <h3>Solid State Hybrid Drive</h3>
-        <p>
-          The solid state hybrid drive works by combining the cheap availablity
-          of a solid state drive, with the cheap bulk storage of a hard drive.
-        </p>
+        </div>
+        <div>
+          <h3>Hard Disk Drives</h3>
+          <p>
+            The hard disk drive (HDD) is a non-volatile storage device that uses
+            magnetic storage to store and retrieve digital data. It has moving
+            parts and you cannot have magents near it. They come in sizes of
+            3.5" and 2.5", most commonly 3.5"
+          </p>
           <iframe
             width="560"
             height="315"
@@ -229,33 +213,77 @@
             allowfullscreen
             >Your browser does not support inline frames.</iframe
           >
-        </p>
+        </div>
+        <div>
+          <h3>Solid State Hybrid Drive</h3>
+          <p>
+            The solid state hybrid drive works by combining the cheap
+            availablity of a solid state drive, with the cheap bulk storage of a
+            hard drive.
+          </p>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/AmkTF0rTiWY"
+            title="InfiniteDesk - How SSDs work"
+            frameborder="0"
+            allow="
+              accelerometer;
+              autoplay;
+              clipboard-write;
+              encrypted-media;
+              gyroscope;
+              picture-in-picture;
+              web-share;
+            "
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+            >Your browser does not support inline frames.</iframe
+          >
+        </div>
       </section>
 
-      <section id=form>
-        <h3>Questions for you!</h3>
-          <form id="find-info">
-            <label for="found-data">Did you find what you were looking for?</label><br /><br />
-            <input type="radio" value="yes" id="found-data" name="found" />
-            <label for="found-data">Yes</label>
-            <input type="radio" value="no" id="found-data" name="found" />
-            <label for="found-data">No</label>
+      <!-- This form below is used to ask the user if they found the data they were looking for, and if it was accurate. -->
+      <section id="form">
+        <h3>Provide helpful information to the developer</h3>
+        <small>
+          This information is sent nowhere. If this website had a server, it
+          would be sent to developer to help understand how to better improve
+          this website
+        </small>
+        <form id="find-info">
+          <label for="found-data">Did you find what you were looking for?</label
+          ><br /><br />
+          <input type="radio" value="yes" id="found-data" name="found" />
+          <label for="found-data">Yes</label>
+          <input type="radio" value="no" id="found-data" name="found" />
+          <label for="found-data">No</label>
 
-              <br /><br /><br />
-            
-            <label for="accurate-data">Was the information you found accurate?</label><br /><br />
-            <input type="radio" value="yes" id="accurate-data" name="accurate" />
-            <label for="found-data">Yes</label>
-            <input type="radio" value="no" id="accurate-data" name="accurate" />
-            <label for="found-data">No</label>
+          <br /><br /><br />
 
-            <br /><br />
-            <label for="additional-comments">Do you have any additional comments?</label><br /><br />
-            <textarea rows="10" cols="55" id="additional-comments" name="comments"></textarea>
+          <label for="accurate-data"
+            >Was the information you found accurate?</label
+          ><br /><br />
+          <input type="radio" value="yes" id="accurate-data" name="accurate" />
+          <label for="found-data">Yes</label>
+          <input type="radio" value="no" id="accurate-data" name="accurate" />
+          <label for="found-data">No</label>
 
-            <br /><br /><input type="reset" value="Clear the data entered in this form" />
-            <br /><br /><input type="submit" value="Submit this form!" />
-          </form>
+          <br /><br />
+          <label for="additional-comments"
+            >Do you have any additional comments?</label
+          ><br /><br />
+          <textarea
+            rows="10"
+            cols="55"
+            id="additional-comments"
+            name="comments"></textarea>
+
+          <br /><br /><input
+            type="reset"
+            value="Clear the data entered in this form" />
+          <br /><br /><input type="submit" value="Submit this form!" />
+        </form>
       </section>
 
       <a class="back-to-top" href="#top"
