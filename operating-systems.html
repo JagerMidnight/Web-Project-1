@@ -7,6 +7,12 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <!--
+      This website was made as coursework.
+      Course: Web Development 10S
+      Date Last Modified: 11/02/2026
+      Past Commit Hash: 09b10b2c8
+    -->
     <header>
       <h1>Operating Systems</h1>
       <nav>
@@ -198,7 +204,7 @@
       <section id="form">
         <form id="favorite-os">
           <fieldset>
-            <legend>What is your favorite Operating System?</legend>
+            <legend><b>What is your favorite Operating System?</b></legend>
             <input
               type="radio"
               name="os"
@@ -256,6 +262,18 @@
               cols="40"
               style="display: none"></textarea>
 
+            <!-- ppconsent is the shortened term for "Privacy Policy Consent",
+              meaning they accepted it or not. It is a boolean value. -->
+            <input
+              type="checkbox"
+              id="pp-accept"
+              name="ppconsent"
+              value="true" />
+            <label for="pp-accept" style="font-size: smaller"
+              >I agree that my data won't get sent to the developer. But it
+              would in a production enviroment. I am responsible if the data in
+              this form gets leaked.
+            </label>
             <br /><input
               type="reset"
               value="Clear the data entered in this form" />
@@ -273,6 +291,10 @@
       /></a>
     </main>
     <footer>
+      <p>
+        <i>Thank you for visiting this website!</i> I hope you find it helpful!
+        <u>or not</u>
+      </p>
       <a href="https://github.com/JagerMidnight" target="_blank"
         >&#169; Source code by JagerMidnight</a
       >
